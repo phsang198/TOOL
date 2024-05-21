@@ -1,0 +1,1602 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>768</width>
+    <height>531</height>
+   </rect>
+  </property>
+  <property name="cursor">
+   <cursorShape>ArrowCursor</cursorShape>
+  </property>
+  <property name="focusPolicy">
+   <enum>Qt::NoFocus</enum>
+  </property>
+  <property name="windowTitle">
+   <string>Tool</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(20, 21, 23)</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGraphicsView" name="graphicsView_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>40</y>
+      <width>691</width>
+      <height>10</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-color: rgb(255, 249, 48);
+background-color: qlineargradient(spread:pad, x1:0.552274, y1:0.472, x2:0.5569, y2:0.825, stop:0.119403 rgba(185, 42, 246, 255), stop:1 rgba(255, 255, 255, 255))</string>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="graphicsView_3">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>50</y>
+      <width>5</width>
+      <height>371</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-color: rgb(255, 249, 48);
+background-color: qlineargradient(spread:pad, x1:0.443, y1:0.006, x2:0.865672, y2:0, stop:0 rgba(145, 42, 246, 255), stop:1 rgba(255, 255, 255, 255))</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnAimbot">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>100</y>
+      <width>31</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+
+QPushButton {
+    color: rgb(108, 109, 114);
+	background-color: rgb(31,32,34);
+	border-radius:5px;
+}
+
+QPushButton:hover {
+    border: 1px solid rgb(255, 48, 245);
+}
+QPushButton:pressed {
+                
+	background-color: rgb(185, 35, 250);
+                color: rgb(16, 14, 25);
+            }</string>
+    </property>
+    <property name="text">
+     <string>I</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnRecoil">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>140</y>
+      <width>31</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+
+QPushButton {
+    color: rgb(108, 109, 114);
+	background-color: rgb(31,32,34);
+	border-radius:5px;
+}
+
+QPushButton:hover {
+    border: 1px solid rgb(255, 48, 245);
+}
+QPushButton:pressed {
+                
+	background-color: rgb(185, 35, 250);
+                color: rgb(16, 14, 25);
+            }</string>
+    </property>
+    <property name="text">
+     <string>II</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnTrigger">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>180</y>
+      <width>31</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+
+QPushButton {
+    color: rgb(108, 109, 114);
+	background-color: rgb(31,32,34);
+	border-radius:5px;
+}
+
+QPushButton:hover {
+    border: 1px solid rgb(255, 48, 245);
+}
+QPushButton:pressed {
+                
+	background-color: rgb(185, 35, 250);
+                color: rgb(16, 14, 25);
+            }</string>
+    </property>
+    <property name="text">
+     <string>III</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnHome">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>60</y>
+      <width>31</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+
+QPushButton {
+    color: rgb(108, 109, 114);
+	background-color: rgb(31,32,34);
+	border-radius:5px;
+}
+
+QPushButton:hover {
+    border: 1px solid rgb(255, 48, 245);
+}
+QPushButton:pressed {
+                
+	background-color: rgb(185, 35, 250);
+                color: rgb(16, 14, 25);
+            }</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>107</x>
+      <y>4</y>
+      <width>291</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+color: rgb(172, 172, 172);</string>
+    </property>
+    <property name="text">
+     <string>Raspberry WiFi Version</string>
+    </property>
+   </widget>
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>59</x>
+      <y>49</y>
+      <width>611</width>
+      <height>371</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>3</number>
+    </property>
+    <widget class="QWidget" name="page">
+     <widget class="QWidget" name="widget" native="true">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>571</width>
+        <height>371</height>
+       </rect>
+      </property>
+      <widget class="QLineEdit" name="spY">
+       <property name="geometry">
+        <rect>
+         <x>114</x>
+         <y>215</y>
+         <width>251</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+QLineEdit {
+    color: rgb(185, 35, 250);
+	background-color: rgb(16, 14, 25);
+	border-radius:5px;
+	border: 1px solid rgb(94, 62, 94);
+}
+QLineEdit:focus {
+    border: 1px solid rgb(255, 48, 245);
+}</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_3">
+       <property name="geometry">
+        <rect>
+         <x>24</x>
+         <y>62</y>
+         <width>61</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>16</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+color: rgb(172, 172, 172);</string>
+       </property>
+       <property name="text">
+        <string>CL</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_6">
+       <property name="geometry">
+        <rect>
+         <x>24</x>
+         <y>149</y>
+         <width>41</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>16</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+color: rgb(172, 172, 172);</string>
+       </property>
+       <property name="text">
+        <string>RX</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_2">
+       <property name="geometry">
+        <rect>
+         <x>25</x>
+         <y>16</y>
+         <width>41</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>16</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+color: rgb(172, 172, 172);</string>
+       </property>
+       <property name="text">
+        <string>X</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="spX">
+       <property name="geometry">
+        <rect>
+         <x>114</x>
+         <y>159</y>
+         <width>251</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+QLineEdit {
+    color: rgb(185, 35, 250);
+	background-color: rgb(16, 14, 25);
+	border-radius:5px;
+	border: 1px solid rgb(94, 62, 94);
+}
+QLineEdit:focus {
+    border: 1px solid rgb(255, 48, 245);
+}</string>
+       </property>
+       <property name="inputMask">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="cbMouse_2">
+       <property name="geometry">
+        <rect>
+         <x>114</x>
+         <y>17</y>
+         <width>251</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>MS Shell Dlg 2</family>
+         <pointsize>14</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+
+QComboBox {
+    color: rgb(185, 35, 250);
+	background-color: rgb(16, 14, 25);
+	border-radius:5px;
+	border: 1px solid rgb(94, 62, 94);
+}
+QComboBox:focus {
+    border: 1px solid rgb(255, 48, 245);
+}</string>
+       </property>
+       <property name="editable">
+        <bool>false</bool>
+       </property>
+       <property name="frame">
+        <bool>false</bool>
+       </property>
+       <item>
+        <property name="text">
+         <string>NO</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>ML</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>AT</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>CT</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>M1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>M2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>MR</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QLabel" name="label_7">
+       <property name="geometry">
+        <rect>
+         <x>24</x>
+         <y>266</y>
+         <width>61</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>16</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+color: rgb(172, 172, 172);</string>
+       </property>
+       <property name="text">
+        <string>MON</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_5">
+       <property name="geometry">
+        <rect>
+         <x>24</x>
+         <y>207</y>
+         <width>41</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>16</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+color: rgb(172, 172, 172);</string>
+       </property>
+       <property name="text">
+        <string>RY</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_4">
+       <property name="geometry">
+        <rect>
+         <x>24</x>
+         <y>93</y>
+         <width>41</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>16</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+color: rgb(172, 172, 172);</string>
+       </property>
+       <property name="text">
+        <string>M</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="spMonitor">
+       <property name="geometry">
+        <rect>
+         <x>114</x>
+         <y>269</y>
+         <width>251</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+QLineEdit {
+    color: rgb(185, 35, 250);
+	background-color: rgb(16, 14, 25);
+	border-radius:5px;
+	border: 1px solid rgb(94, 62, 94);
+}
+QLineEdit:focus {
+    border: 1px solid rgb(255, 48, 245);
+}</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="cboxColor1">
+       <property name="geometry">
+        <rect>
+         <x>114</x>
+         <y>58</y>
+         <width>251</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>MS Shell Dlg 2</family>
+         <pointsize>14</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+
+QComboBox {
+    color: rgb(185, 35, 250);
+	background-color: rgb(16, 14, 25);
+	border-radius:5px;
+	border: 1px solid rgb(94, 62, 94);
+}
+QComboBox:focus {
+    border: 1px solid rgb(255, 48, 245);
+}</string>
+       </property>
+       <property name="frame">
+        <bool>false</bool>
+       </property>
+       <item>
+        <property name="text">
+         <string>P</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Y</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>R</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QComboBox" name="cbMouse">
+       <property name="geometry">
+        <rect>
+         <x>114</x>
+         <y>104</y>
+         <width>120</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>MS Shell Dlg 2</family>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+
+QComboBox {
+    color: rgb(185, 35, 250);
+	background-color: rgb(16, 14, 25);
+	border-radius:5px;
+	border: 1px solid rgb(94, 62, 94);
+}
+QComboBox:focus {
+    border: 1px solid rgb(255, 48, 245);
+}</string>
+       </property>
+       <property name="frame">
+        <bool>false</bool>
+       </property>
+       <item>
+        <property name="text">
+         <string>ML</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>NO</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>AT</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>CT</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>M1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>M2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>MR</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QComboBox" name="cbMouse_1">
+       <property name="geometry">
+        <rect>
+         <x>244</x>
+         <y>104</y>
+         <width>121</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>MS Shell Dlg 2</family>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+
+QComboBox {
+    color: rgb(185, 35, 250);
+	background-color: rgb(16, 14, 25);
+	border-radius:5px;
+	border: 1px solid rgb(94, 62, 94);
+}
+QComboBox:focus {
+    border: 1px solid rgb(255, 48, 245);
+}</string>
+       </property>
+       <property name="currentText">
+        <string>AT</string>
+       </property>
+       <property name="frame">
+        <bool>false</bool>
+       </property>
+       <item>
+        <property name="text">
+         <string>AT</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>NO</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>ML</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>CT</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>M1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>M2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>MR</string>
+        </property>
+       </item>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_3">
+     <widget class="QWidget" name="widget_2" native="true">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>591</width>
+        <height>371</height>
+       </rect>
+      </property>
+      <widget class="QCheckBox" name="ckbOnOffRecoil">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>10</y>
+         <width>51</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QCheckBox:indicator{
+width:50px;
+height:50px;
+border-radius:5px;
+color: rgb(185, 35, 250);
+}
+QCheckBox:indicator:checked
+{
+image:url(./switch_on.png);
+}
+QCheckBox:indicator:unchecked
+{
+image:url(./switch_off.png);
+}</string>
+       </property>
+       <property name="text">
+        <string>ON</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="spSleepRecoil">
+       <property name="geometry">
+        <rect>
+         <x>300</x>
+         <y>104</y>
+         <width>40</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+QLineEdit {
+    color: rgb(185, 35, 250);
+	background-color: rgb(16, 14, 25);
+	border-radius:5px;
+	border: 1px solid rgb(94, 62, 94);
+}
+QLineEdit:focus {
+    border: 1px solid rgb(255, 48, 245);
+}</string>
+       </property>
+       <property name="text">
+        <string>0.5</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_15">
+       <property name="geometry">
+        <rect>
+         <x>24</x>
+         <y>99</y>
+         <width>41</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>16</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+color: rgb(172, 172, 172);</string>
+       </property>
+       <property name="text">
+        <string>S2</string>
+       </property>
+      </widget>
+      <widget class="QSlider" name="slSleepRecoil">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>110</y>
+         <width>191</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QSlider::sub-page:horizontal {
+    height: 5px;
+    background-color: rgb(185, 35, 250);
+    border-radius: 5px;
+    border: 1px solid rgb(94, 62, 94);
+}
+
+QSlider::add-page:horizontal {
+    height: 5px;
+    background-color: rgb(16, 14, 25);
+    border-radius: 5px;
+    border: 1px solid rgb(94, 62, 94);
+}
+
+QSlider::handle:horizontal {
+  width: 30px;
+   height: 20px;
+    margin-top: -15px;
+    margin-bottom: -15px;
+    border-radius: 2px;
+    background: rgb(185, 35, 250);
+   border: 1px solid rgb(94, 62, 94);
+   
+}
+QSlider::handle:horizontal:hover {
+    background: rgb(255, 48, 245);
+}
+
+
+</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_2">
+     <widget class="QWidget" name="widget_3" native="true">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>561</width>
+        <height>371</height>
+       </rect>
+      </property>
+      <widget class="QLabel" name="label_23">
+       <property name="geometry">
+        <rect>
+         <x>24</x>
+         <y>230</y>
+         <width>41</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>16</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+color: rgb(172, 172, 172);</string>
+       </property>
+       <property name="text">
+        <string>F</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_44">
+       <property name="geometry">
+        <rect>
+         <x>24</x>
+         <y>180</y>
+         <width>61</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>16</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+color: rgb(172, 172, 172);</string>
+       </property>
+       <property name="text">
+        <string>CL</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="spTimer">
+       <property name="geometry">
+        <rect>
+         <x>300</x>
+         <y>105</y>
+         <width>40</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+QLineEdit {
+    color: rgb(185, 35, 250);
+	background-color: rgb(16, 14, 25);
+	border-radius:5px;
+	border: 1px solid rgb(94, 62, 94);
+}
+QLineEdit:focus {
+    border: 1px solid rgb(255, 48, 245);
+}</string>
+       </property>
+       <property name="text">
+        <string>0.1</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="cboxTrigger">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>231</y>
+         <width>191</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>MS Shell Dlg 2</family>
+         <pointsize>14</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+
+QComboBox {
+    color: rgb(185, 35, 250);
+	background-color: rgb(16, 14, 25);
+	border-radius:5px;
+	border: 1px solid rgb(94, 62, 94);
+}
+QComboBox:focus {
+    border: 1px solid rgb(255, 48, 245);
+}</string>
+       </property>
+       <property name="editable">
+        <bool>false</bool>
+       </property>
+       <property name="frame">
+        <bool>false</bool>
+       </property>
+       <item>
+        <property name="text">
+         <string>F</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>SHT</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>AT</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>M1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>M2</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QComboBox" name="cboxTrigger_2">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>176</y>
+         <width>191</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+
+QComboBox {
+    color: rgb(185, 35, 250);
+	background-color: rgb(16, 14, 25);
+	border-radius:5px;
+	border: 1px solid rgb(94, 62, 94);
+}
+QComboBox:focus {
+    border: 1px solid rgb(255, 48, 245);
+}</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>P</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Y</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>R</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QLabel" name="label_45">
+       <property name="geometry">
+        <rect>
+         <x>24</x>
+         <y>99</y>
+         <width>41</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>16</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+color: rgb(172, 172, 172);</string>
+       </property>
+       <property name="text">
+        <string>T</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="zoneTrigger">
+       <property name="geometry">
+        <rect>
+         <x>300</x>
+         <y>53</y>
+         <width>40</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+QLineEdit {
+    color: rgb(185, 35, 250);
+	background-color: rgb(16, 14, 25);
+	border-radius:5px;
+	border: 1px solid rgb(94, 62, 94);
+}
+QLineEdit:focus {
+    border: 1px solid rgb(255, 48, 245);
+}</string>
+       </property>
+       <property name="text">
+        <string>1</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_46">
+       <property name="geometry">
+        <rect>
+         <x>24</x>
+         <y>42</y>
+         <width>41</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>16</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+color: rgb(172, 172, 172);</string>
+       </property>
+       <property name="text">
+        <string>Z</string>
+       </property>
+      </widget>
+      <widget class="QSlider" name="slzoneTrigger">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>60</y>
+         <width>191</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QSlider::sub-page:horizontal {
+    height: 5px;
+    background-color: rgb(185, 35, 250);
+    border-radius: 5px;
+    border: 1px solid rgb(94, 62, 94);
+}
+
+QSlider::add-page:horizontal {
+    height: 5px;
+    background-color: rgb(16, 14, 25);
+    border-radius: 5px;
+    border: 1px solid rgb(94, 62, 94);
+}
+
+QSlider::handle:horizontal {
+  width: 30px;
+   height: 20px;
+    margin-top: -15px;
+    margin-bottom: -15px;
+    border-radius: 2px;
+    background: rgb(185, 35, 250);
+   border: 1px solid rgb(94, 62, 94);
+   
+}
+QSlider::handle:horizontal:hover {
+    background: rgb(255, 48, 245);
+}
+
+
+</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QSlider" name="slTimer">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>110</y>
+         <width>191</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QSlider::sub-page:horizontal {
+    height: 5px;
+    background-color: rgb(185, 35, 250);
+    border-radius: 5px;
+    border: 1px solid rgb(94, 62, 94);
+}
+
+QSlider::add-page:horizontal {
+    height: 5px;
+    background-color: rgb(16, 14, 25);
+    border-radius: 5px;
+    border: 1px solid rgb(94, 62, 94);
+}
+
+QSlider::handle:horizontal {
+  width: 30px;
+   height: 20px;
+    margin-top: -15px;
+    margin-bottom: -15px;
+    border-radius: 2px;
+    background: rgb(185, 35, 250);
+   border: 1px solid rgb(94, 62, 94);
+   
+}
+QSlider::handle:horizontal:hover {
+    background: rgb(255, 48, 245);
+}
+
+
+</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="ckbTriggerOnOff">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>10</y>
+         <width>51</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QCheckBox:indicator{
+width:50px;
+height:50px;
+border-radius:5px;
+color: rgb(185, 35, 250);
+}
+QCheckBox:indicator:checked
+{
+image:url(./switch_on.png);
+}
+QCheckBox:indicator:unchecked
+{
+image:url(./switch_off.png);
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_4">
+     <widget class="QWidget" name="widget_4" native="true">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>591</width>
+        <height>371</height>
+       </rect>
+      </property>
+      <widget class="QLabel" name="label_58">
+       <property name="geometry">
+        <rect>
+         <x>24</x>
+         <y>157</y>
+         <width>61</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>16</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+color: rgb(172, 172, 172);</string>
+       </property>
+       <property name="text">
+        <string>SM</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="spOffset">
+       <property name="geometry">
+        <rect>
+         <x>300</x>
+         <y>105</y>
+         <width>40</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+QLineEdit {
+    color: rgb(185, 35, 250);
+	background-color: rgb(16, 14, 25);
+	border-radius:5px;
+	border: 1px solid rgb(94, 62, 94);
+}
+QLineEdit:focus {
+    border: 1px solid rgb(255, 48, 245);
+}</string>
+       </property>
+       <property name="text">
+        <string>3</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="spSpeed">
+       <property name="geometry">
+        <rect>
+         <x>300</x>
+         <y>157</y>
+         <width>40</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+QLineEdit {
+    color: rgb(185, 35, 250);
+	background-color: rgb(16, 14, 25);
+	border-radius:5px;
+	border: 1px solid rgb(94, 62, 94);
+}
+QLineEdit:focus {
+    border: 1px solid rgb(255, 48, 245);
+}</string>
+       </property>
+       <property name="text">
+        <string>0.6</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_59">
+       <property name="geometry">
+        <rect>
+         <x>24</x>
+         <y>99</y>
+         <width>41</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>16</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+color: rgb(172, 172, 172);</string>
+       </property>
+       <property name="text">
+        <string>02</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="spFov">
+       <property name="geometry">
+        <rect>
+         <x>300</x>
+         <y>53</y>
+         <width>40</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+QLineEdit {
+    color: rgb(185, 35, 250);
+	background-color: rgb(16, 14, 25);
+	border-radius:5px;
+	border: 1px solid rgb(94, 62, 94);
+}
+QLineEdit:focus {
+    border: 1px solid rgb(255, 48, 245);
+}</string>
+       </property>
+       <property name="text">
+        <string>1</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_60">
+       <property name="geometry">
+        <rect>
+         <x>24</x>
+         <y>42</y>
+         <width>41</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>16</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+color: rgb(172, 172, 172);</string>
+       </property>
+       <property name="text">
+        <string>01</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="ckbAimOnOff">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>10</y>
+         <width>51</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QCheckBox:indicator{
+width:50px;
+height:50px;
+border-radius:5px;
+color: rgb(185, 35, 250);
+}
+QCheckBox:indicator:checked
+{
+image:url(./switch_on.png);
+}
+QCheckBox:indicator:unchecked
+{
+image:url(./switch_off.png);
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QSlider" name="slFov">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>60</y>
+         <width>191</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QSlider::sub-page:horizontal {
+    height: 5px;
+    background-color: rgb(185, 35, 250);
+    border-radius: 5px;
+    border: 1px solid rgb(94, 62, 94);
+}
+
+QSlider::add-page:horizontal {
+    height: 5px;
+    background-color: rgb(16, 14, 25);
+    border-radius: 5px;
+    border: 1px solid rgb(94, 62, 94);
+}
+
+QSlider::handle:horizontal {
+  width: 30px;
+   height: 20px;
+    margin-top: -15px;
+    margin-bottom: -15px;
+    border-radius: 2px;
+    background: rgb(185, 35, 250);
+   border: 1px solid rgb(94, 62, 94);
+   
+}
+QSlider::handle:horizontal:hover {
+    background: rgb(255, 48, 245);
+}
+
+
+</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QSlider" name="slOffset">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>110</y>
+         <width>191</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QSlider::sub-page:horizontal {
+    height: 5px;
+    background-color: rgb(185, 35, 250);
+    border-radius: 5px;
+    border: 1px solid rgb(94, 62, 94);
+}
+
+QSlider::add-page:horizontal {
+    height: 5px;
+    background-color: rgb(16, 14, 25);
+    border-radius: 5px;
+    border: 1px solid rgb(94, 62, 94);
+}
+
+QSlider::handle:horizontal {
+  width: 30px;
+   height: 20px;
+    margin-top: -15px;
+    margin-bottom: -15px;
+    border-radius: 2px;
+    background: rgb(185, 35, 250);
+   border: 1px solid rgb(94, 62, 94);
+   
+}
+QSlider::handle:horizontal:hover {
+    background: rgb(255, 48, 245);
+}
+
+
+</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QSlider" name="slSpeed">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>162</y>
+         <width>191</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QSlider::sub-page:horizontal {
+    height: 5px;
+    background-color: rgb(185, 35, 250);
+    border-radius: 5px;
+    border: 1px solid rgb(94, 62, 94);
+}
+
+QSlider::add-page:horizontal {
+    height: 5px;
+    background-color: rgb(16, 14, 25);
+    border-radius: 5px;
+    border: 1px solid rgb(94, 62, 94);
+}
+
+QSlider::handle:horizontal {
+  width: 30px;
+   height: 20px;
+    margin-top: -15px;
+    margin-bottom: -15px;
+    border-radius: 2px;
+    background: rgb(185, 35, 250);
+   border: 1px solid rgb(94, 62, 94);
+   
+}
+QSlider::handle:horizontal:hover {
+    background: rgb(255, 48, 245);
+}
+
+
+</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+   <zorder>stackedWidget</zorder>
+   <zorder>graphicsView_2</zorder>
+   <zorder>graphicsView_3</zorder>
+   <zorder>btnAimbot</zorder>
+   <zorder>btnRecoil</zorder>
+   <zorder>btnTrigger</zorder>
+   <zorder>btnHome</zorder>
+   <zorder>label_8</zorder>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

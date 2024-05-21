@@ -1,0 +1,22 @@
+python.exe -m pip install --upgrade pip
+pip install altgraph==0.17.4
+pip install certifi==2023.7.22
+pip install charset-normalizer==3.3.2
+pip install idna==3.4
+pip install mss==8.0.3
+pip install numpy==1.26.1
+pip install opencv-python==4.8.1.78
+pip install pefile==2023.2.7
+pip install pyarmor==8.4.2
+pip install pyarmor.cli.core==5.4.0
+pip install pyinstaller==5.13.2
+pip install pyinstaller-hooks-contrib==2023.10
+pip install pynput==1.7.6
+pip install PyQt5==5.15.10
+pip install PyQt5-Qt5==5.15.2
+pip install PyQt5-sip==12.13.0
+pip install pywin32==306
+pip install pywin32-ctypes==0.2.2
+pip install requests==2.31.0
+pip install six==1.16.0
+pip install urllib3==2.0.7

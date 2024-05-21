@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>244</width>
+    <height>72</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLineEdit" name="lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>220</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+QLineEdit {
+    color: rgb(185, 35, 250);
+	background-color: rgb(16, 14, 25);
+	border-radius:5px;
+	border: 1px solid rgb(94, 62, 94);
+}
+QLineEdit:focus {
+    border: 1px solid rgb(255, 48, 245);
+}</string>
+   </property>
+   <property name="frame">
+    <bool>true</bool>
+   </property>
+   <property name="echoMode">
+    <enum>QLineEdit::Password</enum>
+   </property>
+   <property name="placeholderText">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>40</y>
+     <width>220</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+
+QPushButton {
+    color: rgb(108, 109, 114);
+	background-color: rgb(31,32,34);
+	border-radius:5px;
+}
+
+QPushButton:hover {
+    border: 1px solid rgb(255, 48, 245);
+}
+QPushButton:pressed {
+                
+	background-color: rgb(185, 35, 250);
+                color: rgb(16, 14, 25);
+            }</string>
+   </property>
+   <property name="text">
+    <string>PRESS</string>
+   </property>
+  </widget>
+  <widget class="QGraphicsView" name="graphicsView">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>241</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(0, 0, 0);</string>
+   </property>
+  </widget>
+  <zorder>graphicsView</zorder>
+  <zorder>lineEdit</zorder>
+  <zorder>pushButton</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
